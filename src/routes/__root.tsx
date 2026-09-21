@@ -1,3 +1,4 @@
+import { createElement } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -121,13 +122,10 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function ZapierChatbot() {
   // Zapier Interfaces web component (custom element) — rendered as a popup.
-  return (
-    <zapier-interfaces-chatbot-embed
-      // @ts-expect-error — custom element not in JSX intrinsic elements
-      is-popup={true}
-      chatbot-id="cmu2dqhvx0009c4fkir34ge4v"
-    />
-  );
+  return createElement("zapier-interfaces-chatbot-embed", {
+    "is-popup": "true",
+    "chatbot-id": "cmu2dqhvx0009c4fkir34ge4v",
+  });
 }
 
 function RootComponent() {

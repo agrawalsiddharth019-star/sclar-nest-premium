@@ -42,7 +42,6 @@ export function EnquiryForm() {
       fullName: "",
       mobile: "",
       email: "",
-      role: undefined,
       institution: "",
       course: "",
       roomType: "",
