@@ -119,6 +119,12 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+function ZapierChatbot() {
+  // Custom element; TS needs an intrinsic-elements declaration.
+  const Tag = "zapier-interfaces-chatbot-embed" as unknown as keyof JSX.IntrinsicElements;
+  return <Tag is-popup={true} chatbot-id="cmu2dqhvx0009c4fkir34ge4v" />;
+}
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
@@ -126,6 +132,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      <ZapierChatbot />
     </QueryClientProvider>
   );
 }
