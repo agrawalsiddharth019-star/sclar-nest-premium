@@ -92,6 +92,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
+    scripts: [
+      {
+        type: "module",
+        src: "https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js",
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
