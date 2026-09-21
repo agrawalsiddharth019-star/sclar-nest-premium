@@ -120,9 +120,14 @@ function RootShell({ children }: { children: ReactNode }) {
 }
 
 function ZapierChatbot() {
-  // Custom element; TS needs an intrinsic-elements declaration.
-  const Tag = "zapier-interfaces-chatbot-embed" as unknown as keyof JSX.IntrinsicElements;
-  return <Tag is-popup={true} chatbot-id="cmu2dqhvx0009c4fkir34ge4v" />;
+  // Zapier Interfaces web component (custom element) — rendered as a popup.
+  return (
+    <zapier-interfaces-chatbot-embed
+      // @ts-expect-error — custom element not in JSX intrinsic elements
+      is-popup={true}
+      chatbot-id="cmu2dqhvx0009c4fkir34ge4v"
+    />
+  );
 }
 
 function RootComponent() {

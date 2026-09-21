@@ -165,7 +165,7 @@ export function EnquiryForm() {
   );
 }
 
-function Field({ label, error, children }: { label: string; error?: string; children: React.ReactNode }) {
+function Field({ label, error, children }: { label: string; error?: string | undefined; children: React.ReactNode }) {
   return (
     <div className="space-y-2">
       <Label className="text-sm font-semibold text-foreground">{label}</Label>

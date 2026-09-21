@@ -60,7 +60,7 @@ export const hostelConfig = {
   },
   contact: {
     phone: "Add phone number",
-    whatsappNumber: import.meta.env.VITE_SCLAR_WHATSAPP_NUMBER ?? "",
+    whatsappNumber: import.meta.env['VITE_SCLAR_WHATSAPP_NUMBER'] ?? "",
     whatsappDisplay: "Add WhatsApp number",
     email: "Add email address",
     address: "Add complete hostel address",
