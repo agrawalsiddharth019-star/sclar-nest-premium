@@ -42,9 +42,7 @@ export type Facility = {
 export type FoodDay = {
   day: string;
   meals: {
-    breakfast: string;
     lunch: string;
-    snacks: string;
     dinner: string;
   };
 };
@@ -63,9 +61,9 @@ export const hostelConfig = {
     whatsappNumber: import.meta.env['VITE_SCLAR_WHATSAPP_NUMBER'] ?? "",
     whatsappDisplay: "Add WhatsApp number",
     email: "Add email address",
-    address: "Add complete hostel address",
+    address: "Ramnagar, near Suyash Hospital and NIT Raipur, Raipur",
     workingHours: "Add working hours",
-    mapsUrl: "",
+    mapsUrl: "https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjA7unI-v-WAxUAAAAAHQAAAAAQBg..i&fvr=1&pvq=Cg0vZy8xMWgxaG52ZDQxIh0KF3NjYWxhciBuZXN0IGJveXMgaG9zdGVsEAIYAw&lqi=ChdzY2FsYXIgbmVzdCBib3lzIGhvc3RlbEiB4bT6ha-AgAhaLRAAEAEQAhADGAEYAyIXc2NhbGFyIG5lc3QgYm95cyBob3N0ZWwqBggDEAIQA5IBC2JveXNfaG9zdGVs&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3a28dd686877a371:0xb07d1e3e32346254",
     enquiryMessage:
       "Hello Sclar Nest Boys Hostel Official, I would like to enquire about hostel accommodation.",
   },
@@ -111,13 +109,6 @@ export const hostelConfig = {
     "Convenient location",
   ],
   roomTypes: [
-    {
-      name: "Single Sharing",
-      description: "Private accommodation for students who prefer personal space.",
-      occupancy: "1 student",
-      details: ["Bed", "Storage", "Study area", "Fan/AC: confirm", "Bathroom: confirm"],
-      price: "Add price",
-    },
     {
       name: "Double Sharing",
       description: "Comfortable shared accommodation with a balanced environment.",
@@ -220,9 +211,7 @@ export const hostelConfig = {
     (day) => ({
       day,
       meals: {
-        breakfast: "Breakfast Menu",
         lunch: "Lunch Menu",
-        snacks: "Evening Snacks Menu",
         dinner: "Dinner Menu",
       },
     }),
@@ -245,20 +234,20 @@ export const hostelConfig = {
   ],
   galleryCategories: ["Rooms", "Building", "Facilities", "Food", "Common Area", "Surroundings"],
   location: {
-    address: "Add complete hostel address",
-    nearbyColleges: "Add nearby colleges",
+    address: "Ramnagar, near Suyash Hospital and NIT Raipur, Raipur",
+    nearbyColleges: "Near NIT Raipur",
     nearbyCoaching: "Add nearby coaching institutes",
-    nearbyMarkets: "Add nearby markets",
-    hospitals: "Add hospitals",
+    nearbyMarkets: "Ramnagar market",
+    hospitals: "Near Suyash Hospital",
     transportation: "Add transportation options",
-    landmarks: "Add important landmarks",
-    mapUrl: "",
+    landmarks: "NIT Raipur and Suyash Hospital",
+    mapUrl: "https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjA7unI-v-WAxUAAAAAHQAAAAAQBg..i&fvr=1&pvq=Cg0vZy8xMWgxaG52ZDQxIh0KF3NjYWxhciBuZXN0IGJveXMgaG9zdGVsEAIYAw&lqi=ChdzY2FsYXIgbmVzdCBib3lzIGhvc3RlbEiB4bT6ha-AgAhaLRAAEAEQAhADGAEYAyIXc2NhbGFyIG5lc3QgYm95cyBob3N0ZWwqBggDEAIQA5IBC2JveXNfaG9zdGVs&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3a28dd686877a371:0xb07d1e3e32346254",
     items: [
-      { label: "Address", value: "Add complete hostel address", icon: MapPin },
-      { label: "Nearby colleges", value: "Add nearby colleges", icon: Building2 },
+      { label: "Address", value: "Ramnagar, near Suyash Hospital and NIT Raipur, Raipur", icon: MapPin },
+      { label: "Nearby college", value: "NIT Raipur", icon: Building2 },
       { label: "Coaching institutes", value: "Add nearby coaching institutes", icon: Landmark },
-      { label: "Markets", value: "Add nearby markets", icon: DoorOpen },
-      { label: "Hospitals", value: "Add hospitals", icon: ShieldCheck },
+      { label: "Market", value: "Ramnagar market", icon: DoorOpen },
+      { label: "Hospital", value: "Suyash Hospital", icon: ShieldCheck },
       { label: "Transportation", value: "Add transportation options", icon: Car },
     ],
   },
