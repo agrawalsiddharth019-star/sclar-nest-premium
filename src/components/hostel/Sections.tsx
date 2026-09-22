@@ -26,21 +26,27 @@ import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/compone
 import { hostelConfig, getWhatsAppUrl } from "@/config/hostel";
 import { cn } from "@/lib/utils";
 
-import buildingImage from "@/assets/sclar-building-exterior.jpg";
-import diningImage from "@/assets/sclar-dining.jpg";
-import roomImage from "@/assets/sclar-room-interior.jpg";
-import studyImage from "@/assets/sclar-study-room.jpg";
+import buildingCourtyardAsset from "@/assets/hostel-uploads/sclar-building-courtyard.webp.asset.json";
+import campusWideAsset from "@/assets/hostel-uploads/sclar-campus-wide.webp.asset.json";
+import foodPlateAsset from "@/assets/hostel-uploads/sclar-food-plate.webp.asset.json";
+import gardenShrineAsset from "@/assets/hostel-uploads/sclar-garden-shrine.webp.asset.json";
+import laundryAreaAsset from "@/assets/hostel-uploads/sclar-laundry-area.webp.asset.json";
+import sharedRoomAsset from "@/assets/hostel-uploads/sclar-shared-room.webp.asset.json";
+import signboardAsset from "@/assets/hostel-uploads/sclar-signboard.webp.asset.json";
+import walkwayAsset from "@/assets/hostel-uploads/sclar-walkway.webp.asset.json";
 
 import { Room3D, Shield3D } from "./ThreeSection";
 import { GlassCard, Magnetic, Reveal, SectionHeading, SectionShell } from "./primitives";
 
 const galleryImages = [
-  { title: "Rooms", category: "Rooms", src: roomImage, alt: "Generated visual placeholder of a modern hostel room" },
-  { title: "Building", category: "Building", src: buildingImage, alt: "Generated visual placeholder of a modern hostel building exterior" },
-  { title: "Dining", category: "Food", src: diningImage, alt: "Generated visual placeholder of a hostel dining area" },
-  { title: "Study Area", category: "Facilities", src: studyImage, alt: "Generated visual placeholder of a focused study room" },
-  { title: "Common Area", category: "Common Area", src: diningImage, alt: "Generated visual placeholder for a hostel common area" },
-  { title: "Surroundings", category: "Surroundings", src: buildingImage, alt: "Generated visual placeholder of hostel surroundings" },
+  { title: "Shared Room", category: "Rooms", src: sharedRoomAsset.url, alt: "Shared room at Sclar Nest Boys Hostel" },
+  { title: "Hostel Campus", category: "Building", src: campusWideAsset.url, alt: "Sclar Nest Boys Hostel campus and buildings" },
+  { title: "Hostel Entrance Sign", category: "Building", src: signboardAsset.url, alt: "Boys hostel sign near Sclar Nest" },
+  { title: "Courtyard", category: "Building", src: buildingCourtyardAsset.url, alt: "Building courtyard at Sclar Nest Boys Hostel" },
+  { title: "Laundry Area", category: "Facilities", src: laundryAreaAsset.url, alt: "Laundry facilities at Sclar Nest Boys Hostel" },
+  { title: "Hostel Meal", category: "Food", src: foodPlateAsset.url, alt: "Meal served at Sclar Nest Boys Hostel" },
+  { title: "Garden Area", category: "Common Area", src: gardenShrineAsset.url, alt: "Garden and shrine area at Sclar Nest Boys Hostel" },
+  { title: "Hostel Walkway", category: "Surroundings", src: walkwayAsset.url, alt: "Green walkway inside Sclar Nest Boys Hostel" },
 ];
 
 export function TrustStats() {
@@ -91,8 +97,8 @@ export function About() {
         <Reveal className="relative">
           <div aria-hidden="true" className="absolute -inset-4 rounded-[2rem] bg-accent/10 blur-2xl" />
           <img
-            src={roomImage}
-            alt="Generated placeholder showing a modern student hostel room"
+            src={sharedRoomAsset.url}
+            alt="Shared student room at Sclar Nest Boys Hostel"
             width={1408}
             height={1008}
             className="relative aspect-[4/3] w-full rounded-[2rem] object-cover shadow-3d"
@@ -112,7 +118,7 @@ export function Rooms() {
         title="Choose the Space That Fits You."
         description="Room details are centralized and ready for final pricing, bathroom, fan or AC information once confirmed."
       />
-      <div className="mt-12 grid gap-5 lg:grid-cols-3">
+      <div className="mx-auto mt-12 grid max-w-4xl gap-5 md:grid-cols-2">
         {hostelConfig.roomTypes.map((room, index) => (
           <Reveal key={room.name} delay={index * 0.05}>
             <div className={cn("tilt-card group h-full rounded-3xl border bg-card p-6 shadow-soft transition-all duration-300 hover:-translate-y-2 hover:shadow-glow", room.featured ? "border-primary/35" : "border-border")}>
@@ -231,8 +237,8 @@ export function Food() {
           />
           <Reveal className="mt-8 overflow-hidden rounded-[2rem] shadow-3d">
             <img
-              src={diningImage}
-              alt="Generated placeholder showing a modern student hostel dining area"
+              src={foodPlateAsset.url}
+              alt="Meal served at Sclar Nest Boys Hostel"
               width={1408}
               height={912}
               className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
@@ -309,8 +315,8 @@ export function StudyEnvironment() {
       <div className="grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
         <Reveal className="overflow-hidden rounded-[2rem] shadow-3d lg:order-1">
           <img
-            src={studyImage}
-            alt="Generated placeholder showing a quiet modern hostel study room"
+            src={walkwayAsset.url}
+            alt="Quiet green walkway at Sclar Nest Boys Hostel"
             width={1408}
             height={912}
             className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
@@ -352,7 +358,7 @@ export function Gallery() {
       <SectionHeading
         eyebrow="Gallery"
         title="A Visual Feel for Sclar Nest."
-        description="These generated placeholders are structured so real hostel photos can replace them cleanly."
+        description="Explore real views of the rooms, campus, facilities, food and surroundings at Sclar Nest."
       />
       <div className="mt-10 flex flex-wrap justify-center gap-2">
         {hostelConfig.galleryCategories.map((category) => (
@@ -384,7 +390,7 @@ export function Gallery() {
       <Dialog open={Boolean(activeImage)} onOpenChange={(open) => !open && setActiveImage(null)}>
         <DialogContent className="max-w-5xl border-border bg-card/95 p-3 shadow-3d backdrop-blur-2xl">
           <DialogTitle className="sr-only">Gallery image preview</DialogTitle>
-          <DialogDescription className="sr-only">Large preview of the selected hostel gallery placeholder.</DialogDescription>
+          <DialogDescription className="sr-only">Large preview of the selected hostel photo.</DialogDescription>
           {activeImage ? (
             <img src={activeImage.src} alt={activeImage.alt} className="max-h-[78vh] w-full rounded-2xl object-cover" />
           ) : null}
@@ -405,7 +411,7 @@ export function Location() {
             align="left"
             eyebrow="Location"
             title="Conveniently Located for Student Life."
-            description="Add verified address, nearby institutions, markets, transport and landmark details before publishing real location claims."
+            description="Located in Ramnagar, close to NIT Raipur, Ramnagar market and Suyash Hospital."
           />
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
             {hostelConfig.location.items.map((item) => {
@@ -427,15 +433,14 @@ export function Location() {
           </Button>
         </div>
         <Reveal>
-          <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] border border-border bg-hero p-8 text-hero-foreground shadow-3d">
-            <div aria-hidden="true" className="absolute inset-0 bg-grid opacity-60" />
-            <div className="relative z-10 flex h-full min-h-[456px] flex-col justify-between">
+          <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] border border-border bg-hero text-hero-foreground shadow-3d">
+            <img src={campusWideAsset.url} alt="Sclar Nest Boys Hostel campus" className="absolute inset-0 h-full w-full object-cover opacity-55" loading="lazy" />
+            <div aria-hidden="true" className="absolute inset-0 bg-hero/55" />
+            <div className="relative z-10 flex h-full min-h-[520px] flex-col justify-between p-8">
               <div>
                 <MapPin className="mb-6 size-12 text-accent" aria-hidden="true" />
-                <h3 className="font-display text-3xl font-semibold">Map placeholder</h3>
-                <p className="mt-4 max-w-md text-hero-muted">
-                  Add a Google Maps URL in the hostel configuration to activate directions and embed-ready location details.
-                </p>
+                <h3 className="font-display text-3xl font-semibold">Sclar Nest, Ramnagar</h3>
+                <p className="mt-4 max-w-md text-hero-muted">Near NIT Raipur, Ramnagar market and Suyash Hospital.</p>
               </div>
               <div className="grid gap-3 sm:grid-cols-2">
                 <GlassCard className="p-4 text-hero-muted">
@@ -585,7 +590,7 @@ export function Contact() {
             align="left"
             eyebrow="Contact"
             title="Visit, Call or Send an Enquiry."
-            description="Add verified phone, email, address and working hour details in the central configuration."
+            description="Find Sclar Nest in Ramnagar, near NIT Raipur and Suyash Hospital, or send us an enquiry."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild variant="premium" size="lg">
@@ -606,7 +611,7 @@ export function Contact() {
             { label: "Email", value: hostelConfig.contact.email, icon: Mail },
             { label: "Address", value: hostelConfig.contact.address, icon: MapPin },
             { label: "Working hours", value: hostelConfig.contact.workingHours, icon: Clock3 },
-            { label: "Google Maps", value: "Add Google Maps URL", icon: ExternalLink },
+            { label: "Google Maps", value: "Open location and directions", icon: ExternalLink },
           ].map((item) => {
             const Icon = item.icon;
             return (
