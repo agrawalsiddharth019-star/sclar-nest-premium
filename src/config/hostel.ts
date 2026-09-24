@@ -233,7 +233,7 @@ export const hostelConfig = {
   ],
   galleryCategories: ["Rooms", "Building", "Facilities", "Food", "Common Area", "Surroundings"],
   location: {
-    address: "Ramnagar, near Suyash Hospital and NIT Raipur, Raipur",
+    address: "Kota Rd, Kota, Raipur, Chhattisgarh 492010",
     nearbyColleges: "Near NIT Raipur",
     nearbyCoaching: "Add nearby coaching institutes",
     nearbyMarkets: "Ramnagar market",
@@ -242,7 +242,7 @@ export const hostelConfig = {
     landmarks: "NIT Raipur and Suyash Hospital",
     mapUrl: "https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjA7unI-v-WAxUAAAAAHQAAAAAQBg..i&fvr=1&pvq=Cg0vZy8xMWgxaG52ZDQxIh0KF3NjYWxhciBuZXN0IGJveXMgaG9zdGVsEAIYAw&lqi=ChdzY2FsYXIgbmVzdCBib3lzIGhvc3RlbEiB4bT6ha-AgAhaLRAAEAEQAhADGAEYAyIXc2NhbGFyIG5lc3QgYm95cyBob3N0ZWwqBggDEAIQA5IBC2JveXNfaG9zdGVs&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3a28dd686877a371:0xb07d1e3e32346254",
     items: [
-      { label: "Address", value: "Ramnagar, near Suyash Hospital and NIT Raipur, Raipur", icon: MapPin },
+      { label: "Address", value: "Kota Rd, Kota, Raipur, Chhattisgarh 492010", icon: MapPin },
       { label: "Nearby college", value: "NIT Raipur", icon: Building2 },
       { label: "Market", value: "Ramnagar market", icon: DoorOpen },
       { label: "Hospital", value: "Suyash Hospital", icon: ShieldCheck },
