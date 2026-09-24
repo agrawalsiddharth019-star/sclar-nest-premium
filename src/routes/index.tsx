@@ -16,7 +16,6 @@ import {
   RoomExperience,
   Rooms,
   Rules,
-  Safety,
   StudyEnvironment,
   Testimonials,
   TrustStats,
@@ -53,7 +52,6 @@ function Index() {
         <RoomExperience />
         <Facilities />
         <Food />
-        <Safety />
         <StudyEnvironment />
         <Gallery />
         <Location />

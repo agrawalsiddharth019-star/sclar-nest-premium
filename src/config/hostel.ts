@@ -11,7 +11,6 @@ import {
   Dumbbell,
   Home,
   LampDesk,
-  Landmark,
   MapPin,
   MessageCircle,
   PlugZap,
@@ -245,10 +244,8 @@ export const hostelConfig = {
     items: [
       { label: "Address", value: "Ramnagar, near Suyash Hospital and NIT Raipur, Raipur", icon: MapPin },
       { label: "Nearby college", value: "NIT Raipur", icon: Building2 },
-      { label: "Coaching institutes", value: "Add nearby coaching institutes", icon: Landmark },
       { label: "Market", value: "Ramnagar market", icon: DoorOpen },
       { label: "Hospital", value: "Suyash Hospital", icon: ShieldCheck },
-      { label: "Transportation", value: "Add transportation options", icon: Car },
     ],
   },
   rules: [
