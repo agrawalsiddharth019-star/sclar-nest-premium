@@ -52,7 +52,6 @@ function Index() {
         <RoomExperience />
         <Facilities />
         <Food />
-        <Safety />
         <StudyEnvironment />
         <Gallery />
         <Location />
