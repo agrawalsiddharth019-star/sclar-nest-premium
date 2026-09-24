@@ -11,7 +11,6 @@ import {
   Dumbbell,
   Home,
   LampDesk,
-  Landmark,
   MapPin,
   MessageCircle,
   PlugZap,
