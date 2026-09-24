@@ -433,26 +433,15 @@ export function Location() {
           </Button>
         </div>
         <Reveal>
-          <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] border border-border bg-hero text-hero-foreground shadow-3d">
-            <img src={campusWideAsset.url} alt="Sclar Nest Boys Hostel campus" className="absolute inset-0 h-full w-full object-cover opacity-55" loading="lazy" />
-            <div aria-hidden="true" className="absolute inset-0 bg-hero/55" />
-            <div className="relative z-10 flex h-full min-h-[520px] flex-col justify-between p-8">
-              <div>
-                <MapPin className="mb-6 size-12 text-accent" aria-hidden="true" />
-                <h3 className="font-display text-3xl font-semibold">Sclar Nest, Ramnagar</h3>
-                <p className="mt-4 max-w-md text-hero-muted">Near NIT Raipur, Ramnagar market and Suyash Hospital.</p>
-              </div>
-              <div className="grid gap-3 sm:grid-cols-2">
-                <GlassCard className="p-4 text-hero-muted">
-                  <p className="font-semibold text-hero-foreground">Address</p>
-                  <p className="mt-1 text-sm">{hostelConfig.location.address}</p>
-                </GlassCard>
-                <GlassCard className="p-4 text-hero-muted">
-                  <p className="font-semibold text-hero-foreground">Landmarks</p>
-                  <p className="mt-1 text-sm">{hostelConfig.location.landmarks}</p>
-                </GlassCard>
-              </div>
-            </div>
+          <div className="overflow-hidden rounded-[2rem] border border-border shadow-3d">
+            <iframe
+              title="Sclar Nest Boys Hostel location on Google Maps"
+              src="https://maps.google.com/maps?q=21.2548661,81.6057349&z=17&output=embed"
+              className="h-[520px] w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
         </Reveal>
       </div>
