@@ -16,7 +16,6 @@ import {
   RoomExperience,
   Rooms,
   Rules,
-  Safety,
   StudyEnvironment,
   Testimonials,
   TrustStats,
