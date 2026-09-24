@@ -56,13 +56,14 @@ export const hostelConfig = {
       "Premium boys hostel accommodation designed for comfort, safety and a focused student lifestyle.",
   },
   contact: {
-    phone: "Add phone number",
-    whatsappNumber: import.meta.env['VITE_SCLAR_WHATSAPP_NUMBER'] ?? "",
-    whatsappDisplay: "Add WhatsApp number",
+    phone: "+91 81201 10466",
+    whatsappNumber: import.meta.env['VITE_SCLAR_WHATSAPP_NUMBER'] ?? "918120110466",
+    whatsappDisplay: "+91 81201 10466",
     email: "Add email address",
     address: "Kota Rd, Kota, Raipur, Chhattisgarh 492010",
     workingHours: "Add working hours",
     mapsUrl: "https://maps.app.goo.gl/8scvcMf8Bchqjst28",
+    owner: "Nikhil Dang",
     enquiryMessage:
       "Hello Sclar Nest Boys Hostel Official, I would like to enquire about hostel accommodation.",
   },
