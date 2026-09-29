@@ -115,7 +115,7 @@ export function Rooms() {
       <SectionHeading
         eyebrow="Rooms"
         title="Choose the Space That Fits You."
-        description="Room details are centralized and ready for final pricing, bathroom, fan or AC information once confirmed."
+        description="2, 3 and 4 sharing rooms are available. Pricing and room details can be added once confirmed."
       />
       <div className="mx-auto mt-12 grid max-w-4xl gap-5 md:grid-cols-2">
         {hostelConfig.roomTypes.map((room, index) => (
@@ -232,7 +232,7 @@ export function Food() {
             align="left"
             eyebrow="Dining"
             title="Good Food. Better Days."
-            description="Food and dining information is ready for the real weekly menu, meal timings and kitchen notes."
+            description="Yes — food is available for residents. The weekly lunch and dinner menu can be updated once the details are confirmed."
           />
           <Reveal className="mt-8 overflow-hidden rounded-[2rem] shadow-3d">
             <img
@@ -497,7 +497,7 @@ export function ParentsSection() {
         <GlassCard className="p-7 text-hero-muted">
           <UserRound className="mb-6 size-10 text-accent" aria-hidden="true" />
           <h3 className="font-display text-3xl font-semibold text-hero-foreground">Speak with the hostel team</h3>
-          <p className="mt-4 leading-7">Use the enquiry form to request accurate room, food, rules, safety and admission information.</p>
+          <p className="mt-4 leading-7">Parents can contact the hostel owner, Nikhil Dang, on +91 81201 10466 by call or WhatsApp, or use the enquiry form for room, food, rules and admission information.</p>
           <Button asChild variant="premium" size="lg" className="mt-7">
             <a href="#enquiry">Talk to Us</a>
           </Button>

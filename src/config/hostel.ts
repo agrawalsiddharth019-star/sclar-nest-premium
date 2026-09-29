@@ -79,17 +79,17 @@ export const hostelConfig = {
   trustCards: [
     {
       title: "Comfortable Living",
-      description: "Modern rooms designed around student routines.",
+      description: "Comfortable 2, 3 and 4 sharing rooms for students.",
       icon: Home,
     },
     {
       title: "24/7 Security",
-      description: "Safety information is structured for parents and students.",
+      description: "CCTV and security are available, and the hostel is open 24×7.",
       icon: ShieldCheck,
     },
     {
       title: "High-Speed Wi-Fi",
-      description: "Connectivity details can be confirmed and updated here.",
+      description: "Wi-Fi is available for residents.",
       icon: Wifi,
     },
     {
@@ -122,6 +122,13 @@ export const hostelConfig = {
       details: ["Beds", "Storage", "Study area", "Fan/AC: confirm", "Bathroom: confirm"],
       price: "Add price",
     },
+    {
+      name: "Four Sharing",
+      description: "Economical shared accommodation for students.",
+      occupancy: "4 students",
+      details: ["Beds", "Storage", "Study area", "Fan/AC: confirm", "Bathroom: confirm"],
+      price: "Add price",
+    },
   ] satisfies RoomType[],
   roomHotspots: [
     { label: "Bed", detail: "Sleeping setup details can be added here." },
@@ -134,9 +141,9 @@ export const hostelConfig = {
   facilities: [
     {
       name: "Comfortable Beds",
-      description: "Bed setup details can be edited after confirmation.",
+      description: "Comfortable beds are available in every sharing room.",
       icon: BedDouble,
-      confirmation: "Confirm availability",
+      confirmation: "Available",
     },
     {
       name: "Study Area",
@@ -146,21 +153,21 @@ export const hostelConfig = {
     },
     {
       name: "High-Speed Wi-Fi",
-      description: "Plan speed and access policy can be added.",
+      description: "Wi-Fi is available for residents.",
       icon: Wifi,
-      confirmation: "Confirm availability",
+      confirmation: "Available",
     },
     {
       name: "Security",
-      description: "Entrance and management process can be described.",
+      description: "CCTV and security are available at the hostel.",
       icon: ShieldCheck,
-      confirmation: "Confirm availability",
+      confirmation: "Available",
     },
     {
       name: "Food/Dining",
-      description: "Meal plan and dining timings can be added.",
+      description: "Food is available for residents.",
       icon: Utensils,
-      confirmation: "Confirm availability",
+      confirmation: "Available",
     },
     {
       name: "Clean Bathrooms",
@@ -268,17 +275,17 @@ export const hostelConfig = {
     { name: "Resident Name", context: "Course / College", quote: "Testimonial" },
   ],
   faqs: [
-    { question: "What room types are available?", answer: "Add the available room types and occupancy details." },
+    { question: "What room types are available?", answer: "2 sharing, 3 sharing and 4 sharing rooms are available." },
     { question: "What is included in the hostel fee?", answer: "Add inclusions such as food, utilities, laundry or other services." },
-    { question: "Is food available?", answer: "Add food availability, meal timings and menu details." },
-    { question: "Is Wi-Fi available?", answer: "Add Wi-Fi speed, access and usage policy details." },
-    { question: "What are the hostel timings?", answer: "Add entry, exit and quiet-hour timings." },
-    { question: "Is there CCTV/security?", answer: "Add confirmed security and CCTV details." },
+    { question: "Is food available?", answer: "Yes, food is available for residents." },
+    { question: "Is Wi-Fi available?", answer: "Yes, Wi-Fi is available for residents." },
+    { question: "What are the hostel timings?", answer: "The hostel is open 24×7." },
+    { question: "Is there CCTV/security?", answer: "Yes, CCTV and security are available at the hostel." },
     { question: "What documents are required?", answer: "Add ID, student proof, guardian details and other required documents." },
     { question: "What is the admission process?", answer: "Add enquiry, visit, booking and admission steps." },
     { question: "Is there a refundable security deposit?", answer: "Add deposit amount and refund policy details." },
     { question: "What are the hostel rules?", answer: "Add the latest rules and resident guidelines." },
-    { question: "How can parents contact management?", answer: "Add official parent communication channels." },
+    { question: "How can parents contact management?", answer: "Parents can contact the hostel owner, Nikhil Dang, on +91 81201 10466 by call or WhatsApp." },
   ],
   socialLinks: {
     instagram: "",
