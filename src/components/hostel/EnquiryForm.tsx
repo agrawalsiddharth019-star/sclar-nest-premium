@@ -66,7 +66,7 @@ export function EnquiryForm() {
           <SectionHeading
             align="left"
             eyebrow="Admission Enquiry"
-            title="Find Your Place at Sclar Nest."
+            title="Find Your Place at Scholars Nest."
             description="Share your details and the hostel team can follow up once the enquiry backend is connected."
           />
           <Reveal className="mt-8 rounded-3xl border border-border bg-card p-6 shadow-soft">

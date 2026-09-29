@@ -54,7 +54,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <p className="mt-10 text-sm text-hero-muted">© 2026 Sclar Nest Boys Hostel Official. All Rights Reserved.</p>
+        <p className="mt-10 text-sm text-hero-muted">© 2026 Scholars Nest Boys Hostel. All Rights Reserved.</p>
       </div>
     </footer>
   );

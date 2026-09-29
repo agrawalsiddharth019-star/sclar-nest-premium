@@ -25,7 +25,7 @@ export function Navbar() {
           scrolled ? "glass-panel shadow-glow" : "border-transparent bg-transparent",
         )}
       >
-        <a href="#home" className="group flex items-center gap-3" aria-label="Sclar Nest home">
+        <a href="#home" className="group flex items-center gap-3" aria-label="Scholars Nest home">
           <span className="grid size-11 place-items-center rounded-2xl bg-primary text-primary-foreground shadow-glow transition-transform duration-300 group-hover:-translate-y-0.5">
             SN
           </span>
