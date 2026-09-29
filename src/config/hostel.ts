@@ -61,7 +61,6 @@ export const hostelConfig = {
     whatsappDisplay: "+91 81201 10466",
     email: "Add email address",
     address: "Kota Rd, Kota, Raipur, Chhattisgarh 492010",
-    workingHours: "Add working hours",
     mapsUrl: "https://maps.app.goo.gl/8scvcMf8Bchqjst28",
     owner: "Nikhil Dang",
     enquiryMessage:
