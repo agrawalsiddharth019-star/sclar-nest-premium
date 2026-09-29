@@ -49,7 +49,7 @@ export const hostelConfig = {
   brand: {
     name: "Scholars Nest Boys Hostel",
     shortName: "Scholars Nest",
-    subName: "Boys Hostel Official",
+    subName: "Boys Hostel",
     tagline: "Comfort. Safety. Community.",
     positioning:
       "Premium boys hostel accommodation designed for comfort, safety and a focused student lifestyle.",
