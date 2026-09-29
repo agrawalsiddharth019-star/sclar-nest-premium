@@ -38,14 +38,14 @@ import { Room3D, Shield3D } from "./ThreeSection";
 import { GlassCard, Magnetic, Reveal, SectionHeading, SectionShell } from "./primitives";
 
 const galleryImages = [
-  { title: "Shared Room", category: "Rooms", src: sharedRoomAsset.url, alt: "Shared room at Sclar Nest Boys Hostel" },
-  { title: "Hostel Campus", category: "Building", src: campusWideAsset.url, alt: "Sclar Nest Boys Hostel campus and buildings" },
-  { title: "Hostel Entrance Sign", category: "Building", src: signboardAsset.url, alt: "Boys hostel sign near Sclar Nest" },
-  { title: "Courtyard", category: "Building", src: buildingCourtyardAsset.url, alt: "Building courtyard at Sclar Nest Boys Hostel" },
-  { title: "Laundry Area", category: "Facilities", src: laundryAreaAsset.url, alt: "Laundry facilities at Sclar Nest Boys Hostel" },
-  { title: "Hostel Meal", category: "Food", src: foodPlateAsset.url, alt: "Meal served at Sclar Nest Boys Hostel" },
-  { title: "Garden Area", category: "Common Area", src: gardenShrineAsset.url, alt: "Garden and shrine area at Sclar Nest Boys Hostel" },
-  { title: "Hostel Walkway", category: "Surroundings", src: walkwayAsset.url, alt: "Green walkway inside Sclar Nest Boys Hostel" },
+  { title: "Shared Room", category: "Rooms", src: sharedRoomAsset.url, alt: "Shared room at Scholars Nest Boys Hostel" },
+  { title: "Hostel Campus", category: "Building", src: campusWideAsset.url, alt: "Scholars Nest Boys Hostel campus and buildings" },
+  { title: "Hostel Entrance Sign", category: "Building", src: signboardAsset.url, alt: "Boys hostel sign near Scholars Nest" },
+  { title: "Courtyard", category: "Building", src: buildingCourtyardAsset.url, alt: "Building courtyard at Scholars Nest Boys Hostel" },
+  { title: "Laundry Area", category: "Facilities", src: laundryAreaAsset.url, alt: "Laundry facilities at Scholars Nest Boys Hostel" },
+  { title: "Hostel Meal", category: "Food", src: foodPlateAsset.url, alt: "Meal served at Scholars Nest Boys Hostel" },
+  { title: "Garden Area", category: "Common Area", src: gardenShrineAsset.url, alt: "Garden and shrine area at Scholars Nest Boys Hostel" },
+  { title: "Hostel Walkway", category: "Surroundings", src: walkwayAsset.url, alt: "Green walkway inside Scholars Nest Boys Hostel" },
 ];
 
 export function TrustStats() {
@@ -76,9 +76,9 @@ export function About() {
         <div>
           <SectionHeading
             align="left"
-            eyebrow="About Sclar Nest"
+            eyebrow="About Scholars Nest"
             title="More Than a Hostel. A Place to Belong."
-            description="Sclar Nest Boys Hostel Official provides students with a comfortable, secure and productive living environment shaped around everyday student life."
+            description="Scholars Nest Boys Hostel provides students with a comfortable, secure and productive living environment shaped around everyday student life."
           />
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
             {hostelConfig.highlights.map((item, index) => (
@@ -97,7 +97,7 @@ export function About() {
           <div aria-hidden="true" className="absolute -inset-4 rounded-[2rem] bg-accent/10 blur-2xl" />
           <img
             src={sharedRoomAsset.url}
-            alt="Shared student room at Sclar Nest Boys Hostel"
+            alt="Shared student room at Scholars Nest Boys Hostel"
             width={1408}
             height={1008}
             className="relative aspect-[4/3] w-full rounded-[2rem] object-cover shadow-3d"
@@ -237,7 +237,7 @@ export function Food() {
           <Reveal className="mt-8 overflow-hidden rounded-[2rem] shadow-3d">
             <img
               src={foodPlateAsset.url}
-              alt="Meal served at Sclar Nest Boys Hostel"
+              alt="Meal served at Scholars Nest Boys Hostel"
               width={1408}
               height={912}
               className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
@@ -315,7 +315,7 @@ export function StudyEnvironment() {
         <Reveal className="overflow-hidden rounded-[2rem] shadow-3d lg:order-1">
           <img
             src={walkwayAsset.url}
-            alt="Quiet green walkway at Sclar Nest Boys Hostel"
+            alt="Quiet green walkway at Scholars Nest Boys Hostel"
             width={1408}
             height={912}
             className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
@@ -356,8 +356,8 @@ export function Gallery() {
     <SectionShell id="gallery" className="bg-surface">
       <SectionHeading
         eyebrow="Gallery"
-        title="A Visual Feel for Sclar Nest."
-        description="Explore real views of the rooms, campus, facilities, food and surroundings at Sclar Nest."
+        title="A Visual Feel for Scholars Nest."
+        description="Explore real views of the rooms, campus, facilities, food and surroundings at Scholars Nest."
       />
       <div className="mt-10 flex flex-wrap justify-center gap-2">
         {hostelConfig.galleryCategories.map((category) => (
@@ -434,7 +434,7 @@ export function Location() {
         <Reveal>
           <div className="overflow-hidden rounded-[2rem] border border-border shadow-3d">
             <iframe
-              title="Sclar Nest Boys Hostel location on Google Maps"
+              title="Scholars Nest Boys Hostel location on Google Maps"
               src="https://maps.google.com/maps?q=21.2548661,81.6057349&z=17&output=embed"
               className="h-[520px] w-full border-0"
               loading="lazy"
@@ -578,7 +578,7 @@ export function Contact() {
             align="left"
             eyebrow="Contact"
             title="Visit, Call or Send an Enquiry."
-            description="Find Sclar Nest in Ramnagar, near NIT Raipur and Suyash Hospital, or send us an enquiry."
+            description="Find Scholars Nest in Ramnagar, near NIT Raipur and Suyash Hospital, or send us an enquiry."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild variant="premium" size="lg">

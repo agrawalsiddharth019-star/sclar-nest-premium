@@ -47,9 +47,9 @@ export type FoodDay = {
 
 export const hostelConfig = {
   brand: {
-    name: "Sclar Nest Boys Hostel Official",
-    shortName: "Sclar Nest",
-    subName: "Boys Hostel Official",
+    name: "Scholars Nest Boys Hostel",
+    shortName: "Scholars Nest",
+    subName: "Boys Hostel",
     tagline: "Comfort. Safety. Community.",
     positioning:
       "Premium boys hostel accommodation designed for comfort, safety and a focused student lifestyle.",
@@ -63,7 +63,7 @@ export const hostelConfig = {
     mapsUrl: "https://maps.app.goo.gl/8scvcMf8Bchqjst28",
     owner: "Nikhil Dang",
     enquiryMessage:
-      "Hello Sclar Nest Boys Hostel Official, I would like to enquire about hostel accommodation.",
+      "Hello Scholars Nest Boys Hostel, I would like to enquire about hostel accommodation.",
   },
   navigation: [
     { label: "Home", href: "#home" },
@@ -301,8 +301,8 @@ export const getWhatsAppUrl = () => {
 };
 
 export const seo = {
-  title: "Sclar Nest Boys Hostel Official | Premium Boys Hostel",
+  title: "Scholars Nest Boys Hostel | Premium Boys Hostel",
   description:
-    "Discover Sclar Nest Boys Hostel Official — comfortable, secure and student-friendly accommodation with modern facilities. Explore rooms, facilities and hostel information.",
+    "Discover Scholars Nest Boys Hostel — comfortable, secure and student-friendly accommodation with modern facilities. Explore rooms, facilities and hostel information.",
   canonical: "https://id-preview--c97e9af9-1ebc-40d6-9662-8d81f8f155a0.lovable.app/",
 };
