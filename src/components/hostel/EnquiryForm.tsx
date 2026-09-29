@@ -51,10 +51,27 @@ export function EnquiryForm() {
     },
   });
 
-  const onSubmit = async (values: EnquiryFormValues) => {
+  const onSubmit = (values: EnquiryFormValues) => {
     const parsed = enquirySchema.parse(values);
     if (parsed.website) return;
-    await new Promise((resolve) => window.setTimeout(resolve, 450));
+    const text = [
+      `New enquiry for ${hostelConfig.brand.name}`,
+      `Name: ${parsed.fullName}`,
+      `Mobile: ${parsed.mobile}`,
+      `Email: ${parsed.email}`,
+      `I am a: ${parsed.role}`,
+      `College/Institution: ${parsed.institution}`,
+      `Course: ${parsed.course}`,
+      `Preferred room: ${parsed.roomType}`,
+      `Move-in date: ${parsed.moveInDate}`,
+      parsed.message ? `Message: ${parsed.message}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+    const number = hostelConfig.contact.whatsappNumber.replace(/\D/g, "");
+    const url = `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
+    const win = window.open(url, "_blank", "noopener,noreferrer");
+    if (!win) window.location.href = url;
     setSubmitted(true);
     reset();
   };
@@ -67,13 +84,13 @@ export function EnquiryForm() {
             align="left"
             eyebrow="Admission Enquiry"
             title="Find Your Place at Scholars Nest."
-            description="Share your details and the hostel team can follow up once the enquiry backend is connected."
+            description="Share your details and your enquiry will be sent straight to the hostel owner on WhatsApp."
           />
           <Reveal className="mt-8 rounded-3xl border border-border bg-card p-6 shadow-soft">
             <CalendarDays className="mb-5 size-8 text-primary" aria-hidden="true" />
-            <h3 className="font-display text-2xl font-semibold text-foreground">Backend-ready enquiry flow</h3>
+            <h3 className="font-display text-2xl font-semibold text-foreground">Direct to {hostelConfig.contact.owner}</h3>
             <p className="mt-3 text-sm leading-6 text-muted-foreground">
-              The form validates inputs now and is structured for reCAPTCHA, rate limiting and secure enquiry storage later.
+              After you submit, WhatsApp opens with your details filled in for {hostelConfig.contact.whatsappDisplay}. Just tap send.
             </p>
           </Reveal>
         </div>
