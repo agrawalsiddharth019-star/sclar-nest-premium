@@ -6,7 +6,6 @@ import {
   Car,
   Cctv,
   CircleHelp,
-  Clock3,
   DoorOpen,
   Dumbbell,
   Home,
