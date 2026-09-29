@@ -5,7 +5,6 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
-  Clock3,
   ExternalLink,
   Facebook,
   Instagram,
@@ -599,7 +598,6 @@ export function Contact() {
             { label: "WhatsApp", value: hostelConfig.contact.whatsappDisplay, icon: MessageCircle },
             { label: "Email", value: hostelConfig.contact.email, icon: Mail },
             { label: "Address", value: hostelConfig.contact.address, icon: MapPin },
-            { label: "Working hours", value: hostelConfig.contact.workingHours, icon: Clock3 },
             { label: "Google Maps", value: "Open location and directions", icon: ExternalLink },
           ].map((item) => {
             const Icon = item.icon;
