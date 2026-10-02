@@ -115,7 +115,7 @@ export function Rooms() {
       <SectionHeading
         eyebrow="Rooms"
         title="Choose the Space That Fits You."
-        description="2, 3 and 4 sharing rooms are available. Pricing and room details can be added once confirmed."
+        description="2, 3 and 4 sharing rooms are available. The hostel fee includes food and the electricity bill."
       />
       <div className="mx-auto mt-12 grid max-w-4xl gap-5 md:grid-cols-2">
         {hostelConfig.roomTypes.map((room, index) => (
