@@ -276,7 +276,7 @@ export const hostelConfig = {
   ],
   faqs: [
     { question: "What room types are available?", answer: "2 sharing, 3 sharing and 4 sharing rooms are available." },
-    { question: "What is included in the hostel fee?", answer: "Add inclusions such as food, utilities, laundry or other services." },
+    { question: "What is included in the hostel fee?", answer: "The hostel fee includes food and the electricity bill." },
     { question: "Is food available?", answer: "Yes, food is available for residents." },
     { question: "Is Wi-Fi available?", answer: "Yes, Wi-Fi is available for residents." },
     { question: "What are the hostel timings?", answer: "The hostel is open 24×7." },
