@@ -139,10 +139,6 @@ export function Rooms() {
                   </div>
                 ))}
               </div>
-              <div className="mt-8 rounded-2xl bg-secondary p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Price</p>
-                <p className="mt-1 font-display text-2xl font-semibold text-foreground">{room.price}</p>
-              </div>
               <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
                 <Button asChild variant="glass" className="w-full">
                   <a href="#room-experience">View Details</a>
