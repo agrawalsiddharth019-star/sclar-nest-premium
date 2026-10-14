@@ -1,4 +1,3 @@
-import { createElement } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -106,11 +105,6 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
-        <script
-          type="module"
-          src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"
-          async
-        />
       </head>
       <body>
         {children}
@@ -120,14 +114,6 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
-function ZapierChatbot() {
-  // Zapier Interfaces web component (custom element) — rendered as a popup.
-  return createElement("zapier-interfaces-chatbot-embed", {
-    "is-popup": "true",
-    "chatbot-id": "cmu2dqhvx0009c4fkir34ge4v",
-  });
-}
-
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
@@ -135,7 +121,6 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
-      <ZapierChatbot />
     </QueryClientProvider>
   );
 }
